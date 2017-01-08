@@ -69,7 +69,7 @@ EOM
 chmod u+x hooks/post-update
 popd
 if [ ! -d $SOURCE ];then
-	mkdir $SOURCE
+	mkdir -p $SOURCE
 fi
 pushd $SOURCE
 git init
